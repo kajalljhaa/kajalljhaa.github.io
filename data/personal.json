@@ -1,58 +1,130 @@
 {
-  "_instructions": "Edit this file to update all personal info. No HTML/CSS/JS changes ever needed.",
+  "_instructions": "Edit this file to update all personal information. The website will automatically update without changing any HTML, CSS, or JavaScript files.",
+
   "name": "Kajal Jha",
   "initials": "KJ",
-  "title": "Data Analyst & BI Engineer",
-  "tagline": "I turn raw data into decisions that move businesses forward.",
-  "bio": "Passionate data professional with 6+ years building end-to-end analytics systems — from ETL pipelines and data modeling to executive dashboards and predictive ML models. My work has directly influenced multi-million dollar decisions across finance, retail, and healthcare.",
-  "mission": "To bridge the gap between data and decision-making by building intelligent, scalable analytics systems that empower organizations to act with confidence.",
-  "vision": "A world where every business decision is backed by clean, trustworthy data — where data professionals are recognized as strategic partners, not just report generators.",
-  "location": "Mumbai, MH",
-  "email": "kajaljha815@gmail.com",
-  "phone": "+91 8104157605",
-  "whatsapp": "8104157605",
-  "openToWork": true,
-  "availability": "Available July 2026",
-  "photo": "assets/images/profile.jpg",
-  "_photoNote": "Replace assets/images/profile.jpg with your own photo. Recommended: 400x400px square.",
-  "typingRoles": [
-    "Senior Data Analyst",
-    "Power BI Developer",
-    "BI Engineer",
-    "Senior MIS Executive",
-    "Data Strategist"
-  ],
-  "highlights": [
-    { "value": "2.5+",   "label": "Years Experience" },
-    { "value": "10+",  "label": "Projects Delivered" },
-    { "value": "8",    "label": "Certifications" }
-  ],
-  "coreStrengths": [
-    "End-to-End Pipeline Architecture",
-    "Executive Dashboard Design",
-    "Stakeholder Communication",
-    "Cross-functional Leadership",
-    "Statistical Modeling",
-    "Root Cause Analysis"
-  ],
-  "contact": {
-    "_note": "Get a FREE Formspree endpoint at https://formspree.io — replace YOUR_FORM_ID below",
-    "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
-    "provider": "formspree"
+
+  "title": "Data Analyst | Power BI | SQL | Python | Advanced Excel",
+
+  "tagline": "Solving business problems through data, dashboards, automation, and AI-driven solutions.",
+
+  "bio": "I am a Data Analyst with 2.7 years of experience in Market Research and Customer Experience Management, specializing in Business Intelligence, Process Automation, Dashboard Development, and Data Analytics. Throughout my career, I have designed automated reporting systems, workflow automation solutions, and interactive dashboards that reduce manual effort and improve business efficiency. My expertise spans Power BI, SQL, Python, Advanced Excel, Google Sheets, and Google Apps Script, enabling me to build scalable, data-driven solutions that empower organizations to make informed decisions. Beyond analytics, I actively leverage AI-powered tools to accelerate analysis, automate repetitive tasks, and deliver smarter business solutions. I believe the future of analytics lies in combining Data, Automation, and AI to create measurable business impact.",
+
+  "mission": "To bridge the gap between business challenges and data-driven decision-making by building intelligent analytics, automation, and AI-powered solutions that improve efficiency and create measurable value.",
+
+  "vision": "To become a trusted Analytics Leader who leverages Data, Automation, and AI to help organizations make faster, smarter, and more strategic business decisions.",
+
+  "career": {
+    "startDate": "2023-11-01"
   },
+
+  "location": "Mumbai, Maharashtra, India",
+
+  "email": "kajaljha815@gmail.com",
+
+  "phone": "+91 8104157605",
+
+  "whatsapp": "918104157605",
+
+  "openToWork": true,
+
+  "availability": "Available Immediately",
+
+  "photo": "assets/images/profile.jpg",
+
+  "_photoNote": "Replace assets/images/profile.jpg with your professional photo.",
+
+  "typingRoles": [
+    "Data Analyst",
+    "Business Intelligence Analyst",
+    "Power BI Developer",
+    "Process Automation Specialist",
+    "Business Analyst",
+    "AI-Enabled Data Analyst"
+  ],
+
+  "highlights": [
+    {
+      "value": "AUTO",
+      "label": "Years Experience"
+    },
+    {
+      "value": "10+",
+      "label": "Projects Delivered"
+    },
+    {
+      "value": "6",
+      "label": "Professional Certifications"
+    },
+    {
+      "value": "1000+",
+      "label": "Hours Saved Through Automation"
+    }
+  ],
+
+  "coreStrengths": [
+    "Power BI",
+    "SQL",
+    "Advanced Excel",
+    "Python",
+    "Google Sheets & Apps Script",
+    "Data Visualization",
+    "Dashboard Development",
+    "Process Automation",
+    "Business Intelligence",
+    "Data Analysis",
+    "Business Process Improvement",
+    "Workflow Optimization",
+    "Customer Experience Analytics",
+    "AI-Enabled Problem Solving"
+  ],
+
+  "careerObjective": "I don't just build reports—I solve business problems. I take ownership of identifying inefficiencies, automating repetitive processes, and delivering practical data-driven solutions that save time, improve productivity, and create measurable business value.",
+
+  "longTermGoal": "To become a trusted Analytics Manager who leads data-driven transformation through Business Intelligence, Process Automation, and AI-powered analytics solutions.",
+
+  "preferences": {
+    "workMode": [
+      "Remote",
+      "Hybrid",
+      "On-site"
+    ],
+    "industries": [
+      "Banking & Financial Services",
+      "FinTech",
+      "Consulting",
+      "Product-Based Companies",
+      "Market Research",
+      "Customer Experience",
+      "SaaS & Technology"
+    ]
+  },
+
+  "contact": {
+    "provider": "formspree",
+    "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+    "hireMeAction": "email"
+  },
+
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/kajal-jhaa",
+    "github": "https://github.com/kajalljhaa",
+    "email": "mailto:kajaljha815@gmail.com",
+    "phone": "tel:+918104157605"
+  },
+
   "seo": {
-    "title": "Kajal Jha | Data Analyst & Power BI Developer",
-    "description": "Data Analyst with 6+ years building BI solutions, data pipelines, and predictive models. Available for hire.",
-    "keywords": "data analyst, power bi, business intelligence, sql, python, machine learning, ETL, dashboard, snowflake",
-    "siteUrl": "https://kajalljhaa.github.io/portfolio",
-    "_siteUrlNote": "Replace with your real GitHub Pages URL after deployment",
+    "title": "Kajal Jha | Data Analyst | Power BI | SQL | Python",
+    "description": "Data Analyst specializing in Power BI, SQL, Python, Advanced Excel, Business Intelligence, Process Automation, Dashboard Development, and AI-powered analytics.",
+    "keywords": "Data Analyst, Power BI, SQL, Python, Business Intelligence, Dashboard, Automation, Google Apps Script, Mumbai",
+    "siteUrl": "https://kajalljhaa.github.io",
     "ogImage": "assets/images/og-image.png",
-    "twitterHandle": "@alexmorgan_data",
+    "twitterHandle": "",
     "locale": "en_US"
   },
+
   "analytics": {
-    "googleAnalyticsId": "G-XXXXXXXXXX",
     "enabled": false,
-    "_note": "Set enabled:true and add your real Measurement ID from analytics.google.com (free)"
+    "googleAnalyticsId": "G-XXXXXXXXXX"
   }
 }
