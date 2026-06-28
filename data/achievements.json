@@ -1,0 +1,55 @@
+{
+  "_instructions": "Add unlimited achievements. category options: Competition, Award, Hackathon, Recognition, Publication",
+  "achievements": [
+    {
+      "id": "mckinsey-2023",
+      "icon": "🏆",
+      "category": "Competition",
+      "title": "Top 10 — McKinsey Analytics Challenge 2023",
+      "description": "Placed top 10 globally out of 2,400 teams. Built a supply chain optimization model for a FMCG client using mixed-integer programming and time series forecasting.",
+      "date": "2023-09-01",
+      "link": "",
+      "order": 1
+    },
+    {
+      "id": "tableau-public-2022",
+      "icon": "🥇",
+      "category": "Award",
+      "title": "Best Dashboard — Tableau Public 2022",
+      "description": "Global climate change visualization received 'Viz of the Week' recognition, 40K+ views, and was featured in the Tableau Community newsletter.",
+      "date": "2022-12-01",
+      "link": "https://public.tableau.com/profile/alexmorgan",
+      "order": 2
+    },
+    {
+      "id": "hackdata-2021",
+      "icon": "🚀",
+      "category": "Hackathon",
+      "title": "Winner — HackData Hackathon 2021",
+      "description": "24-hour hackathon winner. Built a real-time COVID-19 hospital capacity forecasting tool using public health data and Facebook Prophet, deployed as a live public dashboard.",
+      "date": "2021-07-10",
+      "link": "",
+      "order": 3
+    },
+    {
+      "id": "analyst-of-year",
+      "icon": "⭐",
+      "category": "Recognition",
+      "title": "Data Analyst of the Year — BrightPath Consulting",
+      "description": "Internal recognition award for exceptional client delivery, technical skill, and team leadership during 2021. Selected from a team of 45 analysts company-wide.",
+      "date": "2021-12-15",
+      "link": "",
+      "order": 4
+    },
+    {
+      "id": "medium-dax",
+      "icon": "📝",
+      "category": "Publication",
+      "title": "'Practical DAX for Finance Teams' — 18K Readers",
+      "description": "Technical article on advanced DAX patterns for financial calculations, reaching 18,000+ readers and featured in the Towards Data Science publication.",
+      "date": "2023-03-01",
+      "link": "https://medium.com/@alexmorgan/practical-dax-finance",
+      "order": 5
+    }
+  ]
+}
