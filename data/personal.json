@@ -1,18 +1,18 @@
 {
-  "_instructions": "Edit this file to update all personal information. The website will automatically update without changing any HTML, CSS, or JavaScript files.",
+  "_instructions": "Edit this file to update all personal information. The portfolio automatically updates without changing HTML, CSS, or JavaScript.",
 
   "name": "Kajal Jha",
   "initials": "KJ",
 
   "title": "Data Analyst | Power BI | SQL | Python | Advanced Excel",
 
-  "tagline": "Solving business problems through data, dashboards, automation, and AI-driven solutions.",
+  "tagline": "Transforming data into business insights through analytics, automation and AI.",
 
-  "bio": "I am a Data Analyst with 2.7 years of experience in Market Research and Customer Experience Management, specializing in Business Intelligence, Process Automation, Dashboard Development, and Data Analytics. Throughout my career, I have designed automated reporting systems, workflow automation solutions, and interactive dashboards that reduce manual effort and improve business efficiency. My expertise spans Power BI, SQL, Python, Advanced Excel, Google Sheets, and Google Apps Script, enabling me to build scalable, data-driven solutions that empower organizations to make informed decisions. Beyond analytics, I actively leverage AI-powered tools to accelerate analysis, automate repetitive tasks, and deliver smarter business solutions. I believe the future of analytics lies in combining Data, Automation, and AI to create measurable business impact.",
+  "bio": "Data Analyst with 2.7+ years of experience in Market Research and Customer Experience Management. Skilled in Power BI, SQL, Python, Advanced Excel, Business Intelligence, Process Automation and Google Apps Script. I enjoy building dashboards, automating repetitive business processes and transforming raw data into meaningful insights that support smarter business decisions.",
 
-  "mission": "To bridge the gap between business challenges and data-driven decision-making by building intelligent analytics, automation, and AI-powered solutions that improve efficiency and create measurable value.",
+  "mission": "To build intelligent analytics and automation solutions that simplify business processes and enable data-driven decision making.",
 
-  "vision": "To become a trusted Analytics Leader who leverages Data, Automation, and AI to help organizations make faster, smarter, and more strategic business decisions.",
+  "vision": "To become a trusted Analytics Leader driving business transformation through Data, Automation and AI.",
 
   "career": {
     "startDate": "2023-11-01"
@@ -28,19 +28,18 @@
 
   "openToWork": true,
 
-  "availability": "Available Immediately",
+  "availability": "Open to Opportunities",
 
   "photo": "assets/images/profile.jpg",
 
-  "_photoNote": "Replace assets/images/profile.jpg with your professional photo.",
+  "_photoNote": "Replace profile.jpg inside assets/images with your own professional image.",
 
   "typingRoles": [
     "Data Analyst",
-    "Business Intelligence Analyst",
     "Power BI Developer",
+    "Business Intelligence Analyst",
     "Process Automation Specialist",
-    "Business Analyst",
-    "AI-Enabled Data Analyst"
+    "AI-Enabled Data Professional"
   ],
 
   "highlights": [
@@ -57,8 +56,8 @@
       "label": "Professional Certifications"
     },
     {
-      "value": "1000+",
-      "label": "Hours Saved Through Automation"
+      "value": "15+",
+      "label": "Process Automations"
     }
   ],
 
@@ -67,21 +66,19 @@
     "SQL",
     "Advanced Excel",
     "Python",
-    "Google Sheets & Apps Script",
-    "Data Visualization",
-    "Dashboard Development",
-    "Process Automation",
+    "Google Apps Script",
     "Business Intelligence",
+    "Dashboard Development",
     "Data Analysis",
-    "Business Process Improvement",
-    "Workflow Optimization",
-    "Customer Experience Analytics",
-    "AI-Enabled Problem Solving"
+    "Process Automation",
+    "Data Visualization",
+    "Workflow Automation",
+    "Problem Solving"
   ],
 
-  "careerObjective": "I don't just build reports—I solve business problems. I take ownership of identifying inefficiencies, automating repetitive processes, and delivering practical data-driven solutions that save time, improve productivity, and create measurable business value.",
+  "careerObjective": "I don't just build reports—I solve business problems. I identify inefficiencies, automate repetitive processes and develop practical data-driven solutions that improve productivity and create measurable business value.",
 
-  "longTermGoal": "To become a trusted Analytics Manager who leads data-driven transformation through Business Intelligence, Process Automation, and AI-powered analytics solutions.",
+  "longTermGoal": "To grow into an Analytics Manager leading Business Intelligence, Automation and AI-driven transformation initiatives.",
 
   "preferences": {
     "workMode": [
@@ -93,10 +90,10 @@
       "Banking & Financial Services",
       "FinTech",
       "Consulting",
-      "Product-Based Companies",
+      "Product Companies",
       "Market Research",
       "Customer Experience",
-      "SaaS & Technology"
+      "Technology"
     ]
   },
 
@@ -115,11 +112,16 @@
 
   "seo": {
     "title": "Kajal Jha | Data Analyst | Power BI | SQL | Python",
-    "description": "Data Analyst specializing in Power BI, SQL, Python, Advanced Excel, Business Intelligence, Process Automation, Dashboard Development, and AI-powered analytics.",
-    "keywords": "Data Analyst, Power BI, SQL, Python, Business Intelligence, Dashboard, Automation, Google Apps Script, Mumbai",
+    "description": "Data Analyst specializing in Power BI, SQL, Python, Advanced Excel, Business Intelligence, Dashboard Development and Process Automation.",
+
+    "keywords": "Data Analyst, Power BI, SQL, Python, Excel, Dashboard, Automation, Business Intelligence, Mumbai",
+
     "siteUrl": "https://kajalljhaa.github.io",
+
     "ogImage": "assets/images/og-image.png",
+
     "twitterHandle": "",
+
     "locale": "en_US"
   },
 
