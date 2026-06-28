@@ -1,0 +1,53 @@
+{
+  "_instructions": "Add unlimited blog posts. Set externalUrl to your Medium/Hashnode/Dev.to post URL. Leave empty for coming soon.",
+  "posts": [
+    {
+      "id": "dax-finance",
+      "category": "Power BI",
+      "emoji": "◈",
+      "title": "Practical DAX Patterns Every Finance Analyst Needs",
+      "summary": "A field-tested collection of DAX measures for rolling totals, YoY variance, and budget vs actuals — built for finance teams, not developers.",
+      "date": "2024-02-12",
+      "readTime": "8 min",
+      "tags": ["DAX","Power BI","Finance"],
+      "externalUrl": "https://medium.com/@alexmorgan/practical-dax-finance",
+      "order": 1
+    },
+    {
+      "id": "sql-window-functions",
+      "category": "SQL",
+      "emoji": "◉",
+      "title": "10 SQL Window Functions That Will Change How You Analyze Data",
+      "summary": "Window functions are the most underused SQL feature among analysts. Here's how RANK, LAG, LEAD, and NTILE solve problems you've been solving the hard way.",
+      "date": "2024-01-05",
+      "readTime": "12 min",
+      "tags": ["SQL","Window Functions","Analytics"],
+      "externalUrl": "https://medium.com/@alexmorgan/sql-window-functions",
+      "order": 2
+    },
+    {
+      "id": "time-series-forecasting",
+      "category": "Machine Learning",
+      "emoji": "◐",
+      "title": "Time Series Forecasting for Business Analysts",
+      "summary": "You don't need a PhD to build useful forecasts. This guide walks through Prophet-based forecasting with real business examples anyone can follow.",
+      "date": "2023-10-22",
+      "readTime": "10 min",
+      "tags": ["Forecasting","Python","Prophet"],
+      "externalUrl": "https://medium.com/@alexmorgan/forecasting-guide",
+      "order": 3
+    },
+    {
+      "id": "pbi-performance",
+      "category": "Power BI",
+      "emoji": "◑",
+      "title": "Why Your Power BI Dashboard is Slow (And How to Fix It)",
+      "summary": "A systematic guide to diagnosing and fixing slow Power BI reports — covering data model design, DAX optimization, and visual rendering bottlenecks.",
+      "date": "2023-08-14",
+      "readTime": "15 min",
+      "tags": ["Power BI","Performance","DAX"],
+      "externalUrl": "https://medium.com/@alexmorgan/power-bi-performance",
+      "order": 4
+    }
+  ]
+}
