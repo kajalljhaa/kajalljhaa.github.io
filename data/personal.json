@@ -1,0 +1,111 @@
+{
+  "_instructions": "Edit this file to update all personal information for your portfolio.",
+
+  "name": "Kajal Jha",
+  "initials": "KJ",
+
+  "title": "Data Analyst | Power BI | SQL | Excel | Python",
+
+  "tagline": "Transforming raw data into meaningful business decisions through analytics, automation, and interactive dashboards.",
+
+  "bio": "I'm a Data Analyst with 1.5+ years of experience in Market Research and Customer Experience Management. I specialize in Power BI, SQL, Advanced Excel, Python, Google Sheets, and Process Automation. Throughout my career, I have built interactive dashboards, automated reporting systems, workflow solutions, and data collection platforms that improve efficiency and support business decision-making. I also leverage AI-powered tools to accelerate analysis, automate repetitive work, and deliver smarter, scalable business solutions.",
+
+  "mission": "To help organizations make faster, smarter, and data-driven decisions by combining analytics, automation, and business intelligence.",
+
+  "vision": "To become a leading Analytics and Business Intelligence professional who transforms complex business challenges into impactful, data-driven solutions.",
+
+  "location": "Mumbai, Maharashtra",
+
+  "email": "kajaljha815@gmail.com",
+
+  "phone": "+91 8104157605",
+
+  "whatsapp": "8104157605",
+
+  "openToWork": true,
+
+  "availability": "Available Immediately",
+
+  "preferredWorkMode": [
+    "Remote",
+    "Hybrid",
+    "On-site"
+  ],
+
+  "photo": "assets/images/profile.jpg",
+
+  "_photoNote": "Replace assets/images/profile.jpg with your professional image.",
+
+  "typingRoles": [
+    "Data Analyst",
+    "Power BI Developer",
+    "Business Intelligence Analyst",
+    "MIS & Reporting Specialist",
+    "Process Automation Specialist",
+    "AI-Enabled Data Professional"
+  ],
+
+  "highlights": [
+    {
+      "value": "1.5+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "15+",
+      "label": "Business Projects"
+    },
+    {
+      "value": "6+",
+      "label": "Professional Certifications"
+    },
+    {
+      "value": "20+",
+      "label": "Automations & Dashboards"
+    }
+  ],
+
+  "coreStrengths": [
+    "Business Intelligence",
+    "Power BI Dashboard Development",
+    "Advanced Excel",
+    "SQL & Database Querying",
+    "Python for Data Analytics",
+    "Process Automation",
+    "Google Sheets & Apps Script",
+    "Interactive Dashboard Development",
+    "Workflow Automation",
+    "Market Research Analytics",
+    "Customer Experience Analytics",
+    "Data Cleaning & Transformation",
+    "Reporting Automation",
+    "AI-Assisted Analytics",
+    "Business Problem Solving"
+  ],
+
+  "contact": {
+    "provider": "formspree",
+    "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+    "_note": "Replace with your own Formspree endpoint."
+  },
+
+  "seo": {
+    "title": "Kajal Jha | Data Analyst Portfolio",
+
+    "description": "Data Analyst with 1.5+ years of experience in Power BI, SQL, Advanced Excel, Python, Business Intelligence, Dashboard Development, Process Automation, and AI-enabled analytics.",
+
+    "keywords": "Kajal Jha, Data Analyst, Power BI Developer, SQL Developer, Business Intelligence, Dashboard Developer, Excel Expert, Python, Process Automation, Data Visualization, Google Sheets, Apps Script, AI Analytics",
+
+    "siteUrl": "https://kajalljhaa.github.io",
+
+    "ogImage": "assets/images/og-image.png",
+
+    "twitterHandle": "",
+
+    "locale": "en_US"
+  },
+
+  "analytics": {
+    "enabled": false,
+    "googleAnalyticsId": "G-XXXXXXXXXX"
+  }
+}
