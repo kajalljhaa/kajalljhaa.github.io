@@ -1,80 +1,146 @@
 {
   "_instructions": "Add unlimited certifications. PDFs go in /certificates/, images in /assets/images/certs/",
+
   "certifications": [
     {
-      "id": "pbi-associate",
-      "emoji": "🏅",
-      "title": "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
-      "issuer": "Microsoft",
-      "image": "assets/images/certs/pbi-associate.jpg",
-      "pdfFile": "certificates/microsoft-pbi-associate.pdf",
-      "description": "Validates expertise in data preparation, modeling, visualization, and deployment in Power BI Service and Power BI Desktop.",
-      "issuedDate": "2023-04-15",
-      "expiryDate": "2025-04-15",
-      "credentialId": "MSFT-PL300-2023-4521",
-      "verifyUrl": "https://learn.microsoft.com/api/credentials/share/en-us/AlexMorgan",
-      "tags": ["Power BI","Microsoft","BI"],
+      "id": "business-data-analytics",
+      "emoji": "🏆",
+      "title": "Master Certification in Business Data Analytics",
+      "issuer": "IT Vedant Education Pvt. Ltd.",
+      "image": "assets/images/certs/business-data-analytics.jpg",
+      "pdfFile": "",
+      "description": "Comprehensive certification covering Business Intelligence, Power BI, SQL, Python, Excel, dashboard development, and real-world analytics projects.",
+      "issuedDate": "2023-12-20",
+      "expiryDate": null,
+      "credentialId": "ITV686FFA781FB4E",
+      "verifyUrl": "",
+      "tags": [
+        "Business Analytics",
+        "Power BI",
+        "SQL",
+        "Python"
+      ],
       "order": 1
     },
+
     {
-      "id": "azure-dp900",
-      "emoji": "☁️",
-      "title": "Microsoft Azure Data Fundamentals (DP-900)",
-      "issuer": "Microsoft",
-      "image": "assets/images/certs/azure-dp900.jpg",
-      "pdfFile": "certificates/azure-dp900.pdf",
-      "description": "Core data concepts, relational and non-relational data structures, and analytics workloads on Microsoft Azure.",
-      "issuedDate": "2022-11-10",
+      "id": "ibm-data-analysis-python",
+      "emoji": "🥇",
+      "title": "IBM Data Analysis with Python",
+      "issuer": "IBM Developer Skills Network",
+      "image": "assets/images/certs/ibm-data-analysis-python.jpg",
+      "pdfFile": "certificates/ibm-data-analysis-python.pdf",
+      "description": "Completed IBM's Data Analysis with Python program covering data cleaning, analysis, visualization, NumPy, Pandas, and practical analytics techniques.",
+      "issuedDate": "2022-12-10",
       "expiryDate": null,
-      "credentialId": "DP900-2022-8833",
-      "verifyUrl": "https://learn.microsoft.com/api/credentials/share/en-us/AlexMorgan/DP900",
-      "tags": ["Azure","Microsoft","Cloud"],
+      "credentialId": "14A4CCB4C54C427AA27B5BED4DCA2C8C",
+      "verifyUrl": "",
+      "tags": [
+        "IBM",
+        "Python",
+        "Data Analysis"
+      ],
       "order": 2
     },
+
     {
-      "id": "google-da",
-      "emoji": "🎓",
-      "title": "Google Data Analytics Professional Certificate",
-      "issuer": "Google / Coursera",
-      "image": "assets/images/certs/google-da.jpg",
-      "pdfFile": "certificates/google-data-analytics.pdf",
-      "description": "8-course professional program covering data analysis, SQL, R, Tableau, and real-world case studies.",
-      "issuedDate": "2021-08-20",
+      "id": "analytics-python",
+      "emoji": "🐍",
+      "title": "Analytics with Python",
+      "issuer": "IT Vedant Education Pvt. Ltd.",
+      "image": "assets/images/certs/analytics-python.jpg",
+      "pdfFile": "",
+      "description": "Hands-on certification in Python for data analytics including data cleaning, manipulation, visualization, and automation.",
+      "issuedDate": "2025-07-10",
       "expiryDate": null,
-      "credentialId": "GOOGLE-DA-2021-55421",
-      "verifyUrl": "https://coursera.org/verify/professional-cert/GOOGLEDA2021",
-      "tags": ["Google","SQL","Data Analytics"],
+      "credentialId": "ITV6384CD7ADC74E",
+      "verifyUrl": "",
+      "tags": [
+        "Python",
+        "Analytics",
+        "Automation"
+      ],
       "order": 3
     },
+
     {
-      "id": "datacamp-ml",
-      "emoji": "🤖",
-      "title": "Machine Learning Scientist with Python",
-      "issuer": "DataCamp",
-      "image": "assets/images/certs/datacamp-ml.jpg",
-      "pdfFile": "certificates/datacamp-ml-scientist.pdf",
-      "description": "23-course track covering supervised and unsupervised ML, feature engineering, and model deployment with Scikit-learn.",
-      "issuedDate": "2021-12-01",
+      "id": "sql-fundamentals",
+      "emoji": "🗄️",
+      "title": "Fundamentals with SQL",
+      "issuer": "IT Vedant Education Pvt. Ltd.",
+      "image": "assets/images/certs/sql-fundamentals.jpg",
+      "pdfFile": "",
+      "description": "Covered SQL fundamentals including joins, aggregate functions, subqueries, filtering, sorting, and database concepts.",
+      "issuedDate": "2025-07-10",
       "expiryDate": null,
-      "credentialId": "DC-MLS-2021-7744",
-      "verifyUrl": "https://www.datacamp.com/statement-of-accomplishment/track/alexmorgan",
-      "tags": ["Python","Machine Learning","Scikit-learn"],
+      "credentialId": "ITV63FA5528948C2",
+      "verifyUrl": "",
+      "tags": [
+        "SQL",
+        "Database",
+        "MySQL"
+      ],
       "order": 4
     },
+
     {
-      "id": "aws-ccp",
-      "emoji": "🌩️",
-      "title": "AWS Certified Cloud Practitioner",
-      "issuer": "Amazon Web Services",
-      "image": "assets/images/certs/aws-ccp.jpg",
-      "pdfFile": "certificates/aws-cloud-practitioner.pdf",
-      "description": "Foundational understanding of AWS Cloud services, security architecture, pricing models, and global infrastructure.",
-      "issuedDate": "2022-03-05",
-      "expiryDate": "2025-03-05",
-      "credentialId": "AWS-CCP-2022-991",
-      "verifyUrl": "https://www.credly.com/badges/aws-ccp-alexmorgan",
-      "tags": ["AWS","Cloud","Amazon"],
+      "id": "advanced-excel",
+      "emoji": "📊",
+      "title": "Excel & Advanced Excel",
+      "issuer": "IT Vedant Education Pvt. Ltd.",
+      "image": "assets/images/certs/advanced-excel.jpg",
+      "pdfFile": "",
+      "description": "Advanced Excel training covering formulas, Pivot Tables, dashboards, lookup functions, conditional formatting, charts, and automation.",
+      "issuedDate": "2025-07-10",
+      "expiryDate": null,
+      "credentialId": "ITV63FA5529618E6",
+      "verifyUrl": "",
+      "tags": [
+        "Excel",
+        "Dashboards",
+        "Automation"
+      ],
       "order": 5
+    },
+
+    {
+      "id": "python-programming",
+      "emoji": "💻",
+      "title": "Python Programming",
+      "issuer": "IT Vedant Education Pvt. Ltd.",
+      "image": "assets/images/certs/python-programming.jpg",
+      "pdfFile": "",
+      "description": "Learned Python programming fundamentals, object-oriented concepts, data structures, file handling, and automation.",
+      "issuedDate": "2025-07-10",
+      "expiryDate": null,
+      "credentialId": "ITV6384CD7A7BB88",
+      "verifyUrl": "",
+      "tags": [
+        "Python",
+        "Programming",
+        "Automation"
+      ],
+      "order": 6
+    },
+
+    {
+      "id": "r-programming",
+      "emoji": "📈",
+      "title": "R Programming",
+      "issuer": "IT Vedant Education Pvt. Ltd.",
+      "image": "assets/images/certs/r-programming.jpg",
+      "pdfFile": "",
+      "description": "Learned statistical computing, data visualization, data manipulation, and analytics using the R programming language.",
+      "issuedDate": "2025-07-10",
+      "expiryDate": null,
+      "credentialId": "ITV64FD06E724BE3",
+      "verifyUrl": "",
+      "tags": [
+        "R",
+        "Statistics",
+        "Analytics"
+      ],
+      "order": 7
     }
   ]
 }
