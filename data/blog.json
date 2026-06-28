@@ -1,0 +1,53 @@
+{
+  "_instructions": "Add unlimited blog posts. Set externalUrl to your Medium/Hashnode/Dev.to post URL. Leave empty for coming soon.",
+  "posts": [
+    {
+      "id": "power-bi-tips",
+      "category": "Power BI",
+      "emoji": "◈",
+      "title": "5 DAX Patterns Every Power BI Dashboard Should Have",
+      "summary": "A practical collection of DAX measures for running totals, MoM variance, YTD calculations, and dynamic KPI cards — built for business dashboards, not textbooks.",
+      "date": "2025-01-10",
+      "readTime": "7 min",
+      "tags": ["DAX", "Power BI", "Dashboards"],
+      "externalUrl": "",
+      "order": 1
+    },
+    {
+      "id": "excel-automation",
+      "category": "Excel",
+      "emoji": "◉",
+      "title": "How to Automate MIS Reports in Excel Without VBA",
+      "summary": "Step-by-step guide to building auto-refreshing MIS reports using Power Query, dynamic named ranges, and structured tables — no coding required.",
+      "date": "2024-11-20",
+      "readTime": "9 min",
+      "tags": ["Excel", "Automation", "MIS"],
+      "externalUrl": "",
+      "order": 2
+    },
+    {
+      "id": "sql-analytics",
+      "category": "SQL",
+      "emoji": "◐",
+      "title": "SQL Window Functions for Business Analysts — A Practical Guide",
+      "summary": "Master RANK, ROW_NUMBER, LAG, LEAD, and running totals with real business examples. Window functions are the most powerful tool most analysts underuse.",
+      "date": "2024-09-05",
+      "readTime": "10 min",
+      "tags": ["SQL", "Analytics", "Window Functions"],
+      "externalUrl": "",
+      "order": 3
+    },
+    {
+      "id": "google-apps-script",
+      "category": "Automation",
+      "emoji": "◑",
+      "title": "Automate Your Google Sheets Workflows with Apps Script",
+      "summary": "Practical introduction to Google Apps Script for data analysts — automated email reports, form response processing, scheduled data pulls, and more.",
+      "date": "2024-07-18",
+      "readTime": "11 min",
+      "tags": ["Google Sheets", "Apps Script", "Automation"],
+      "externalUrl": "",
+      "order": 4
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "_instructions": "Add unlimited testimonials. Place photos in assets/images/testimonials/. If no photo, initials are shown.",
+  "testimonials": [
+    {
+      "id": "manager-1",
+      "name": "Team Manager",
+      "role": "Operations Manager",
+      "company": "BridgeLoyalty CEM LLP",
+      "initials": "TM",
+      "photo": "",
+      "stars": 5,
+      "text": "Kajal consistently delivers high-quality dashboards and automated solutions that have transformed how our team accesses and uses data. Her ability to understand business requirements and translate them into practical analytics tools is exceptional.",
+      "date": "2024-06-01",
+      "order": 1
+    },
+    {
+      "id": "colleague-1",
+      "name": "Team Lead",
+      "role": "Senior Analyst",
+      "company": "BridgeLoyalty CEM LLP",
+      "initials": "SL",
+      "photo": "",
+      "stars": 5,
+      "text": "Working with Kajal has been a pleasure. She brings both technical skill and business awareness to every project. Her Power BI dashboards and automation workflows have saved the team countless hours every week.",
+      "date": "2024-03-15",
+      "order": 2
+    }
+  ]
+}

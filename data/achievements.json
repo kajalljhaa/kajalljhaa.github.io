@@ -1,0 +1,55 @@
+{
+  "_instructions": "Add unlimited achievements. category options: Competition, Award, Hackathon, Recognition, Publication",
+  "achievements": [
+    {
+      "id": "master-cert",
+      "icon": "🏆",
+      "category": "Certification",
+      "title": "Master Certification in Business Data Analytics — IT Vedant",
+      "description": "Earned a comprehensive Master Certification in Business Data Analytics covering Power BI, SQL, Python, Excel, dashboard development, and real-world analytics projects. Credential ID: ITV686FFA781FB4E.",
+      "date": "2023-12-20",
+      "link": "",
+      "order": 1
+    },
+    {
+      "id": "ibm-cert",
+      "icon": "🥇",
+      "category": "Certification",
+      "title": "IBM Data Analysis with Python — IBM Developer Skills Network",
+      "description": "Successfully completed IBM's professional Data Analysis with Python program covering data cleaning, analysis, NumPy, Pandas, and data visualization techniques. Credential ID: 14A4CCB4C54C427AA27B5BED4DCA2C8C.",
+      "date": "2022-12-10",
+      "link": "",
+      "order": 2
+    },
+    {
+      "id": "automation-impact",
+      "icon": "⚡",
+      "category": "Recognition",
+      "title": "Process Automation Impact — BridgeLoyalty CEM LLP",
+      "description": "Recognized for designing and deploying automated MIS reporting workflows and data collection tools that reduced manual effort by 70%+ and improved reporting accuracy across the organization.",
+      "date": "2024-01-01",
+      "link": "",
+      "order": 3
+    },
+    {
+      "id": "dashboard-suite",
+      "icon": "📊",
+      "category": "Recognition",
+      "title": "Built 20+ Business Dashboards & Automation Solutions",
+      "description": "Delivered over 20 interactive Power BI dashboards, Excel-based reporting tools, and automated data workflows deployed across business units at BridgeLoyalty CEM LLP, supporting daily operational and strategic decision-making.",
+      "date": "2024-06-01",
+      "link": "",
+      "order": 4
+    },
+    {
+      "id": "multi-cert",
+      "icon": "📜",
+      "category": "Certification",
+      "title": "6+ Professional Certifications in Analytics & Technology",
+      "description": "Earned 6+ professional certifications spanning Business Data Analytics, IBM Data Analysis with Python, Analytics with Python, SQL Fundamentals, Advanced Excel, Python Programming, and R Programming — all from recognized institutions.",
+      "date": "2025-07-10",
+      "link": "",
+      "order": 5
+    }
+  ]
+}

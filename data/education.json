@@ -1,0 +1,41 @@
+{
+  "_instructions": "Add multiple education entries if needed. First entry is displayed by default.",
+  "education": [
+    {
+      "id": "graduation",
+      "emoji": "🎓",
+      "degree": "Bachelor of Commerce (B.Com)",
+      "field": "Commerce & Business Studies",
+      "institution": "University of Mumbai",
+      "location": "Mumbai, Maharashtra",
+      "startYear": 2019,
+      "endYear": 2022,
+      "gpa": "",
+      "highlights": [
+        "Graduated with a Bachelor of Commerce degree from the University of Mumbai",
+        "Developed strong foundation in accounting, economics, business management, and statistics",
+        "Complemented academic studies with professional certifications in data analytics and technology"
+      ],
+      "subjects": [
+        "Business Statistics",
+        "Accountancy",
+        "Economics",
+        "Business Management",
+        "Financial Accounting",
+        "Cost Accounting",
+        "Commerce",
+        "Mathematics"
+      ],
+      "projects": [
+        {
+          "title": "Business Data Analysis Project",
+          "description": "Analyzed business performance data using Excel to identify trends and support decision-making."
+        },
+        {
+          "title": "Market Research Study",
+          "description": "Conducted primary and secondary market research to evaluate consumer behavior patterns."
+        }
+      ]
+    }
+  ]
+}

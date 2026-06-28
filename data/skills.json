@@ -1,0 +1,63 @@
+{
+  "_instructions": "Add or remove skill categories and skills. 'proficiency' is 0-100. Colors are any valid CSS color.",
+  "categories": [
+    {
+      "name": "Business Intelligence",
+      "icon": "◈",
+      "color": "#6366F1",
+      "items": [
+        { "name": "Power BI",          "proficiency": 92 },
+        { "name": "DAX",               "proficiency": 85 },
+        { "name": "Power Query (M)",   "proficiency": 82 },
+        { "name": "Looker Studio",     "proficiency": 70 },
+        { "name": "Dashboard Design",  "proficiency": 90 }
+      ]
+    },
+    {
+      "name": "Data & Spreadsheets",
+      "icon": "◉",
+      "color": "#8B5CF6",
+      "items": [
+        { "name": "Advanced Excel",        "proficiency": 95 },
+        { "name": "Google Sheets",         "proficiency": 92 },
+        { "name": "Pivot Tables & Charts", "proficiency": 95 },
+        { "name": "Power Query",           "proficiency": 85 },
+        { "name": "Data Cleaning",         "proficiency": 90 }
+      ]
+    },
+    {
+      "name": "SQL & Databases",
+      "icon": "◐",
+      "color": "#06B6D4",
+      "items": [
+        { "name": "SQL",           "proficiency": 88 },
+        { "name": "MySQL",         "proficiency": 85 },
+        { "name": "Data Modeling", "proficiency": 78 },
+        { "name": "ETL Workflows", "proficiency": 80 }
+      ]
+    },
+    {
+      "name": "Programming & Automation",
+      "icon": "◑",
+      "color": "#10B981",
+      "items": [
+        { "name": "Python",              "proficiency": 80 },
+        { "name": "Pandas / NumPy",      "proficiency": 78 },
+        { "name": "Google Apps Script",  "proficiency": 85 },
+        { "name": "Reporting Automation","proficiency": 90 },
+        { "name": "Process Automation",  "proficiency": 88 }
+      ]
+    },
+    {
+      "name": "Analytics & Research",
+      "icon": "◌",
+      "color": "#F59E0B",
+      "items": [
+        { "name": "Market Research Analytics",  "proficiency": 88 },
+        { "name": "Customer Experience Analytics","proficiency": 85 },
+        { "name": "MIS Reporting",              "proficiency": 92 },
+        { "name": "AI-Assisted Analytics",      "proficiency": 80 }
+      ]
+    }
+  ]
+}
