@@ -1,83 +1,77 @@
 {
-  "_instructions": "Total experience years are auto-calculated from startDate. Set endDate to null for current role. Add as many jobs as needed.",
+  "_instructions": "Total experience years are auto-calculated from startDate. Set endDate to null for current role.",
+
   "jobs": [
     {
-      "id": "nexus",
-      "company": "Nexus Analytics Group",
-      "logo": "assets/images/companies/nexus.png",
-      "_logoNote": "Place 80x80px PNG in assets/images/companies/. Leave empty string to show emoji fallback.",
+      "id": "bridgeloyalty",
+
+      "company": "BridgeLoyalty Customer Experience Management LLP",
+
+      "logo": "assets/images/companies/bridgeloyalty.png",
+
+      "_logoNote": "Place the company logo inside assets/images/companies/. Leave blank if unavailable.",
+
       "logoFallback": "🏢",
-      "role": "Senior Data Analyst",
-      "type": "Full-time",
-      "location": "San Francisco, CA (Hybrid)",
-      "current": true,
-      "startDate": "2022-03-01",
-      "endDate": null,
-      "accentColor": "#6366F1",
-      "description": "Lead data analyst for a cross-functional BI team supporting 5 business units. Own the full analytics product lifecycle — from requirements gathering to production deployment and monitoring.",
-      "responsibilities": [
-        "Architect and maintain 20+ Power BI dashboards consumed by C-suite and department heads",
-        "Design and optimize SQL data models in Snowflake serving 500M+ rows",
-        "Lead a 3-person analyst team with weekly code reviews and mentorship",
-        "Partner with engineering to build automated ETL pipelines reducing manual reporting by 80%",
-        "Drive self-serve analytics adoption — onboarded 60+ business users onto Power BI Service"
-      ],
-      "achievements": [
-        "Revenue forecasting model with 94% accuracy, used to anchor an $8M budget planning cycle",
-        "Reduced executive reporting time from 3 days to under 4 hours via dashboard automation",
-        "Identified $1.2M in operational waste through supply chain analytics initiative"
-      ],
-      "technologies": ["Power BI", "DAX", "Snowflake", "SQL", "Python", "Azure Data Factory", "Git"]
-    },
-    {
-      "id": "brightpath",
-      "company": "BrightPath Consulting",
-      "logo": "assets/images/companies/brightpath.png",
-      "logoFallback": "💡",
+
       "role": "Data Analyst",
+
       "type": "Full-time",
-      "location": "Austin, TX",
-      "current": false,
-      "startDate": "2020-06-01",
-      "endDate": "2022-02-28",
-      "accentColor": "#8B5CF6",
-      "description": "Embedded analytics consultant delivering BI solutions for mid-market clients in retail and healthcare. Managed full project lifecycle across 6 client engagements.",
+
+      "location": "Mumbai, Maharashtra, India",
+
+      "current": true,
+
+      "startDate": "2024-01-17",
+
+      "endDate": null,
+
+      "accentColor": "#4F46E5",
+
+      "description": "Working as a Data Analyst focused on Business Intelligence, Reporting Automation, Process Automation, and Customer Experience Analytics. Responsible for developing scalable reporting solutions, workflow automation systems, interactive dashboards, and operational analytics to improve business efficiency and decision-making across multiple live projects.",
+
       "responsibilities": [
-        "Delivered 12+ Power BI and Tableau dashboards across 6 client engagements",
-        "Performed statistical analysis and A/B testing to validate product decisions",
-        "Built Python automation scripts reducing manual data processing by 60%",
-        "Collaborated with client IT teams to design scalable data warehouse schemas"
+        "Develop interactive Power BI dashboards and business reports for management and stakeholders.",
+        "Design and automate workflow solutions using Google Apps Script, Google Sheets, and Google Workspace.",
+        "Build and maintain Flow Management Systems (FMS) for multiple customer experience and market research projects.",
+        "Develop Productivity Management Systems (PMS) to monitor employee productivity, project performance, and reward & recognition tracking.",
+        "Automate recurring reports, approval workflows, and email communication to improve operational efficiency.",
+        "Create dynamic MIS reports and executive dashboards using Power BI, Advanced Excel, and Google Sheets.",
+        "Develop scalable Google Forms and Google Sheets-based data collection platforms for live business operations.",
+        "Write SQL queries for data extraction, transformation, validation, and business reporting.",
+        "Perform data cleaning, validation, analysis, and visualization to support business decision-making.",
+        "Collaborate with cross-functional teams to improve reporting processes, automate manual operations, and optimize business workflows."
       ],
+
       "achievements": [
-        "Healthcare client reduced patient no-show rate by 18% using predictive scheduling",
-        "Retail client increased inventory turnover by 22% via demand forecasting model",
-        "Promoted to team lead within 12 months, managing 2 junior consultants"
+        "Developed automated email workflow solutions that significantly reduced repetitive manual communication and improved operational efficiency.",
+        "Built Google Apps Script-based automation systems that streamlined data collection and workflow management across multiple live projects.",
+        "Designed and implemented internal Flow Management Systems (FMS) and Productivity Management Systems (PMS) to improve operational visibility and process standardization.",
+        "Created real-time dashboards and automated MIS reporting systems enabling faster, data-driven decision-making.",
+        "Reduced manual reporting effort through workflow automation, reusable reporting templates, and centralized data management.",
+        "Supported customer experience and market research projects by delivering reliable analytics, reporting solutions, and business insights."
       ],
-      "technologies": ["Power BI", "Tableau", "SQL", "Python", "Excel", "Power Query", "SSRS"]
-    },
-    {
-      "id": "dataspark",
-      "company": "DataSpark Solutions",
-      "logo": "assets/images/companies/dataspark.png",
-      "logoFallback": "⚡",
-      "role": "Junior Data Analyst",
-      "type": "Full-time",
-      "location": "Remote",
-      "current": false,
-      "startDate": "2019-01-15",
-      "endDate": "2020-05-31",
-      "accentColor": "#06B6D4",
-      "description": "Entry-level analyst role supporting marketing and sales analytics. Focused on campaign performance reporting and CRM data quality improvement.",
-      "responsibilities": [
-        "Built weekly and monthly marketing performance reports in Excel and Google Sheets",
-        "Cleaned CRM data across 3 systems, improving quality score from 62% to 95%",
-        "Created SQL queries for ad-hoc analysis, supporting senior analysts with Power BI"
-      ],
-      "achievements": [
-        "Automated weekly marketing report saving 8 hours per week",
-        "Discovered tracking discrepancy saving $45K in misallocated ad spend"
-      ],
-      "technologies": ["Excel", "SQL", "Google Sheets", "Google Analytics", "HubSpot", "Power BI"]
+
+      "technologies": [
+        "Power BI",
+        "SQL",
+        "Python",
+        "Advanced Excel",
+        "Google Sheets",
+        "Google Apps Script",
+        "Google Forms",
+        "Power Query",
+        "Business Intelligence",
+        "Data Analysis",
+        "Dashboard Development",
+        "Data Visualization",
+        "MIS Reporting",
+        "Workflow Automation",
+        "Process Automation",
+        "Customer Experience Analytics",
+        "Market Research Analytics",
+        "Reporting Automation",
+        "AI Productivity Tools"
+      ]
     }
   ]
 }
