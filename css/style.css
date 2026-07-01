@@ -141,8 +141,8 @@ section{padding:120px 0}
 .status-ring::after{content:'';position:absolute;inset:-3px;border-radius:50%;border:1px solid #10B981;animation:ring-expand 2.5s ease-in-out infinite;opacity:.6}
 @keyframes ring-pulse{0%,100%{transform:scale(1)}50%{transform:scale(.85)}}
 @keyframes ring-expand{0%{transform:scale(1);opacity:.6}100%{transform:scale(2.5);opacity:0}}
-.hero-name{font-family:'Manrope',sans-serif;font-size:clamp(3.2rem,6vw,5.2rem);font-weight:900;letter-spacing:-.06em;line-height:1;color:var(--text);margin-bottom:18px}
-.hero-name .ln{display:block}
+.hero-name{font-family:'Manrope',sans-serif;font-size:clamp(3.2rem,6vw,5.2rem);font-weight:900;letter-spacing:-.06em;line-height:1;color:var(--text);margin-bottom:18px;white-space:nowrap}
+.hero-name .ln{display:inline}
 .hero-name .ln-accent{background:linear-gradient(135deg,var(--accent) 20%,var(--accent-h) 60%,var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-title{font-size:1.1rem;font-weight:500;color:var(--text-2);margin-bottom:10px;letter-spacing:.01em}
 .typing-wrap{font-size:1rem;font-weight:600;color:var(--accent-h);font-family:'JetBrains Mono','Fira Code',monospace;margin-bottom:28px;min-height:1.6em;display:flex;align-items:center;gap:8px}
