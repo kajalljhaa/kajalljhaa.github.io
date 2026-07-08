@@ -196,7 +196,7 @@ section{padding:120px 0}
 .about-callout::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(var(--accent),transparent)}
 .callout-label{font-size:.7rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
 .callout-text{font-size:.92rem;color:var(--text-2);line-height:1.75}
-.strengths-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+.strengths-list{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px}
 .str-item{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:var(--r-sm);background:var(--surface);border:1px solid var(--border);font-size:.84rem;font-weight:500;color:var(--text-2);transition:all var(--t-fast)}
 .str-item:hover{background:var(--surface-h);border-color:var(--border-a);color:var(--text)}
 .str-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
@@ -545,7 +545,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 0 28
   .edu-body{padding:28px 24px}
   .edu-proj-grid{grid-template-columns:1fr}
   .cf-row{grid-template-columns:1fr}
-  .strengths-list{grid-template-columns:1fr}
+  .strengths-list{grid-template-columns:1fr 1fr}
   .footer-grid{grid-template-columns:1fr;gap:24px}
   .footer-base{flex-direction:column;text-align:center}
   .hero-btns{flex-direction:column}
@@ -565,6 +565,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 0 28
   .stat-block{grid-template-columns:1fr}
   .resume-grid{grid-template-columns:1fr 1fr}
   .proj-kpis{flex-wrap:wrap}
+  .strengths-list{grid-template-columns:1fr}
 }
 
 /* ── 27. Reduced Motion ── */
