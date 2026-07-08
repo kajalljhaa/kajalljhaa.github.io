@@ -484,7 +484,7 @@ function renderResume(d) {
       <div class="resume-icon">${r.icon}</div>
       <div class="resume-label">${esc(r.label)}</div>
       <div class="resume-desc">${esc(r.description)}</div>
-      <a href="${esc(r.file)}" class="resume-dl" download aria-label="Download ${esc(r.label)} resume">⬇ Download PDF</a>
+      <a href="${esc(r.file)}" class="resume-dl" download="Kajal_Jha_${esc(r.label).replace(/\s+/g,'_')}_Resume.pdf" aria-label="Download ${esc(r.label)} resume">⬇ Download PDF</a>
     </div>`).join(''));
 }
 
@@ -503,52 +503,6 @@ function renderAchievements(d) {
         ${a.link ? `<a href="${esc(a.link)}" class="cert-link" target="_blank" rel="noopener noreferrer" style="margin-top:10px;display:inline-flex">View →</a>` : ''}
       </div>
     </div>`).join(''));
-}
-
-/* ─── 18. Testimonials Carousel ─── */
-function renderTestimonials(d, autoMs = 5500) {
-  if (!d?.testimonials) return;
-  const ts = [...d.testimonials].sort((a,b)=>(a.order||99)-(b.order||99));
-  let cur = 0, timer;
-  setHTML('#test-slides', ts.map(t => `
-    <div class="test-slide">
-      <div class="test-card">
-        <div class="test-stars">${'★'.repeat(t.stars)}<span style="opacity:.2">${'★'.repeat(5-t.stars)}</span></div>
-        <blockquote class="test-quote">"${esc(t.text)}"</blockquote>
-        <div class="test-author">
-          <div class="test-avatar">
-            ${t.photo ? `<img src="${esc(t.photo)}" alt="${esc(t.name)}" loading="lazy" onerror="this.parentElement.textContent='${esc(t.initials||t.name.slice(0,2))}';">` : esc(t.initials||t.name.slice(0,2))}
-          </div>
-          <div><div class="test-name">${esc(t.name)}</div><div class="test-role-str">${esc(t.role)}, ${esc(t.company)}</div></div>
-        </div>
-      </div>
-    </div>`).join(''));
-  setHTML('#test-dots', ts.map((_,i) =>
-    `<div class="test-dot ${i===0?'active':''}" data-idx="${i}" role="button" tabindex="0" aria-label="Slide ${i+1}"></div>`
-  ).join(''));
-  const slides = $('#test-slides'), dots = $$('.test-dot');
-  function goTo(n) {
-    cur = (n + ts.length) % ts.length;
-    if (slides) slides.style.transform = `translateX(-${cur*100}%)`;
-    dots.forEach((d,i) => d.classList.toggle('active', i===cur));
-  }
-  $('#test-prev')?.addEventListener('click', () => { clearInterval(timer); goTo(cur-1); });
-  $('#test-next')?.addEventListener('click', () => { clearInterval(timer); goTo(cur+1); });
-  $('#test-dots')?.addEventListener('click', e => {
-    if (e.target.matches('.test-dot')) { clearInterval(timer); goTo(+e.target.dataset.idx); }
-  });
-  let sx = 0;
-  slides?.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
-  slides?.addEventListener('touchend', e => {
-    if (Math.abs(sx - e.changedTouches[0].clientX) > 50) goTo(cur + (sx > e.changedTouches[0].clientX ? 1 : -1));
-  });
-  if (autoMs > 0) {
-    const start = () => { timer = setInterval(() => goTo(cur+1), autoMs); };
-    const stop = () => clearInterval(timer);
-    start();
-    $('.test-wrap')?.addEventListener('mouseenter', stop);
-    $('.test-wrap')?.addEventListener('mouseleave', start);
-  }
 }
 
 /* ─── 19. Social / Contact / Footer ─── */
@@ -651,7 +605,6 @@ async function init() {
     renderEducation(education);
     renderResume(resume);
     renderAchievements(achievements);
-    renderTestimonials(testimonials, settings?.testimonials?.autoplayMs ?? 5500);
     renderSocial(social);
     renderContact(p);
     renderFooter(p);
