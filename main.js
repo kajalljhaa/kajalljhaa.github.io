@@ -704,4 +704,24 @@ async function init() {
       $('meta[name="twitter:description"]')?.setAttribute('content', p.seo.description);
     }
     if (p?.seo?.title) {
-      $(
+      $('meta[property="og:title"]')?.setAttribute('content', p.seo.title);
+      $('meta[name="twitter:title"]')?.setAttribute('content', p.seo.title);
+    }
+    if (p?.seo?.siteUrl) {
+      $('link[rel="canonical"]')?.setAttribute('href', p.seo.siteUrl + '/');
+      $('meta[property="og:url"]')?.setAttribute('content', p.seo.siteUrl + '/');
+    }
+    if (p?.name) $('meta[name="author"]')?.setAttribute('content', p.name);
+
+    // Typing
+    initTyping(p?.typingRoles || [], settings?.hero?.typingSpeedMs, settings?.hero?.typingDeleteMs, settings?.hero?.typingPauseMs);
+
+    // Post-render
+    setTimeout(() => { initReveal(); initSkillAnimations(); }, 120);
+
+  } catch (err) {
+    console.error('Portfolio init error:', err);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', init);
