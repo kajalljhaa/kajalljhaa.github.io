@@ -138,6 +138,9 @@ function renderHero(p, yrs) {
   if (pbExp) pbExp.textContent = `${yrs} Years`;
   setAttr('#hero-hire-btn', 'href', `mailto:${p.email}?subject=Hiring+Inquiry`);
   setAttr('#nav-cta', 'href', `mailto:${p.email}?subject=Hiring+Inquiry`);
+  // Profile photo — driven by data/personal.json so uploading a new photo
+  // through the CMS updates the hero image without ever touching index.html.
+  if (p.photo) setAttr('#hero-photo-img', 'src', p.photo);
 }
 
 /* ─── 7. About ─── */
@@ -305,6 +308,7 @@ document.addEventListener('keydown', e => {
 
 /* ─── 12. Projects ─── */
 let _projects = [];
+let _visibleProjects = [];
 function renderProjects(d) {
   if (!d?.projects) return;
   _projects = [...d.projects].sort((a,b) => (a.order||99)-(b.order||99));
@@ -334,18 +338,20 @@ function filterProjects() {
 function renderProjectCards(ps) {
   const grid = $('#proj-grid');
   if (!grid) return;
+  _visibleProjects = ps;
   if (!ps.length) {
     grid.innerHTML = `<div class="no-results"><div class="no-results-icon">🔍</div><p>No projects match your search.</p></div>`;
     return;
   }
-  grid.innerHTML = ps.map(p => {
+  grid.innerHTML = ps.map((p, i) => {
     const span = p.featured ? 'span-full' : '';
     return `
-    <article class="proj-card ${span} reveal" onclick="window._openModal('${esc(p.id)}')" aria-label="${esc(p.title)}">
+    <article class="proj-card ${span} reveal" onclick="window._openModal(${i})" aria-label="${esc(p.title)}">
       <div class="proj-accent" style="background:${p.gradient||'linear-gradient(135deg,var(--accent),var(--accent-h))'}"></div>
       <div class="proj-thumb" style="background:linear-gradient(135deg,var(--bg-2),var(--bg-3))">
-        <div class="proj-thumb-bg" style="background:${p.gradient||''}"></div>
-        <div class="proj-emoji">${p.emoji||'📊'}</div>
+        ${p.thumbnail
+          ? `<img src="${esc(p.thumbnail)}" alt="${esc(p.title)}" loading="lazy" onerror="this.remove()">`
+          : `<div class="proj-thumb-bg" style="background:${p.gradient||''}"></div><div class="proj-emoji">${p.emoji||'📊'}</div>`}
         ${p.featured ? '<div class="proj-feat-pill">Featured</div>' : ''}
       </div>
       <div class="proj-body">
@@ -358,15 +364,15 @@ function renderProjectCards(ps) {
         <div class="proj-actions">
           ${p.githubUrl ? `<a href="${esc(p.githubUrl)}" class="pa-btn pa-primary" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">GitHub →</a>` : ''}
           ${p.liveUrl  ? `<a href="${esc(p.liveUrl)}"  class="pa-btn pa-secondary" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Live Demo</a>` : ''}
-          <button class="pa-btn pa-secondary" onclick="event.stopPropagation();window._openModal('${esc(p.id)}')">Case Study →</button>
+          <button class="pa-btn pa-secondary" onclick="event.stopPropagation();window._openModal(${i})">Case Study →</button>
         </div>
       </div>
     </article>`;
   }).join('');
   setTimeout(() => $$('#proj-grid .reveal').forEach(el => { if (isVisible(el)) el.classList.add('vis'); }), 60);
 }
-window._openModal = id => {
-  const p = _projects.find(x => x.id === id);
+window._openModal = idx => {
+  const p = _visibleProjects[idx];
   if (!p) return;
   const modal = $('#modal');
   if (!modal) return;
@@ -409,7 +415,9 @@ function renderCerts(d) {
   setHTML('#certs-grid', certs.map(c => `
     <div class="cert-card reveal">
       <div class="cert-top">
-        <span class="cert-emoji">${c.emoji}</span>
+        ${c.image
+          ? `<img class="cert-badge-img" src="${esc(c.image)}" alt="${esc(c.title)}" loading="lazy" onerror="this.outerHTML='<span class=cert-emoji>${esc(c.emoji||'🏆')}</span>'">`
+          : `<span class="cert-emoji">${c.emoji||'🏆'}</span>`}
         <div><div class="cert-title">${esc(c.title)}</div><div class="cert-issuer">${esc(c.issuer)}</div></div>
       </div>
       <p class="cert-desc">${esc(c.description)}</p>
