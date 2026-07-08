@@ -1,0 +1,243 @@
+backend:
+  name: github
+  repo: kajalljhaa/kajalljhaa.github.io
+  branch: main
+  # Replace with your own Cloudflare Worker URL (see cloudflare-worker/worker.js
+  # and ADMIN_GUIDE.md for the one-time setup). No trailing slash.
+  base_url: https://aged-cherry-accd.kajaljha815.workers.dev
+  auth_endpoint: auth
+
+publish_mode: simple
+site_url: https://kajalljhaa.github.io
+display_url: https://kajalljhaa.github.io
+show_preview_links: true
+
+# Default fallback location for any upload that doesn't specify its own
+# folder below. In practice every field below sets its own folder, so this
+# is rarely used.
+media_folder: "assets/images/uploads"
+public_folder: "assets/images/uploads"
+
+collections:
+
+  # ── About Me ──────────────────────────────────────────────────────────
+  - name: "about"
+    label: "About Me"
+    files:
+      - file: "data/personal.json"
+        label: "About Me & Contact Info"
+        name: "personal"
+        fields:
+          - { name: "_instructions", widget: hidden, default: "Edit this file to update all personal information for your portfolio." }
+          - { label: "Full Name", name: "name", widget: string }
+          - { label: "Initials (logo badge)", name: "initials", widget: string }
+          - { label: "Professional Title", name: "title", widget: string, hint: "Shown under your name, e.g. Data Analyst | Power BI | SQL" }
+          - { label: "Tagline", name: "tagline", widget: string, hint: "Shown in the site footer" }
+          - { label: "Bio (Hero + About text)", name: "bio", widget: text, hint: "This paragraph appears in both the top hero section and the About section" }
+          - { label: "Mission", name: "mission", widget: text }
+          - { label: "Vision", name: "vision", widget: text }
+          - { label: "Profile Photo", name: "photo", widget: image, media_folder: "assets/images", public_folder: "assets/images", hint: "Shown in the hero section — replaces the current photo automatically" }
+          - { name: "_photoNote", widget: hidden, default: "Replace assets/images/profile.jpg with your professional image." }
+          - { label: "Location", name: "location", widget: string }
+          - { label: "Email", name: "email", widget: string }
+          - { label: "Phone", name: "phone", widget: string }
+          - { label: "WhatsApp Number (digits only, no +)", name: "whatsapp", widget: string }
+          - { label: "Open To Work", name: "openToWork", widget: boolean, default: true }
+          - { label: "Availability Text", name: "availability", widget: string, hint: "e.g. Available Immediately" }
+          - { label: "Preferred Work Mode", name: "preferredWorkMode", widget: list }
+          - { label: "Typing Roles (rotate under your name)", name: "typingRoles", widget: list }
+          - label: "Highlight Stats"
+            name: "highlights"
+            widget: list
+            summary: "{{value}} — {{label}}"
+            fields:
+              - { label: "Value", name: "value", widget: string }
+              - { label: "Label", name: "label", widget: string }
+          - { label: "Core Strengths", name: "coreStrengths", widget: list }
+          - label: "Contact Form"
+            name: "contact"
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Provider", name: "provider", widget: string, default: "formspree" }
+              - { label: "Formspree Endpoint", name: "formspreeEndpoint", widget: string, hint: "https://formspree.io/f/xxxxxxx — leave as-is if you haven't set one up yet; the contact form will fall back to opening the visitor's email app instead." }
+              - { name: "_note", widget: hidden, default: "Replace with your own Formspree endpoint." }
+          - label: "SEO (advanced — safe to leave alone)"
+            name: "seo"
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Page Title", name: "title", widget: string }
+              - { label: "Meta Description", name: "description", widget: text }
+              - { label: "Keywords", name: "keywords", widget: string }
+              - { label: "Site URL", name: "siteUrl", widget: string }
+              - { label: "Social Share Image", name: "ogImage", widget: image, media_folder: "assets/images", public_folder: "assets/images" }
+              - { label: "Twitter Handle", name: "twitterHandle", widget: string, required: false }
+              - { label: "Locale", name: "locale", widget: string, default: "en_US" }
+          - label: "Analytics (advanced — safe to leave alone)"
+            name: "analytics"
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Enabled", name: "enabled", widget: boolean, default: false }
+              - { label: "Google Analytics ID", name: "googleAnalyticsId", widget: string, required: false }
+
+  # ── Skills ────────────────────────────────────────────────────────────
+  - name: "skills"
+    label: "Skills"
+    files:
+      - file: "data/skills.json"
+        label: "Skills"
+        name: "skills"
+        fields:
+          - { name: "_instructions", widget: hidden, default: "Edit this file to update your skills categories and proficiency levels." }
+          - label: "Skill Categories"
+            name: "categories"
+            widget: list
+            summary: "{{name}}"
+            fields:
+              - { label: "Category Name", name: "name", widget: string }
+              - { label: "Icon (emoji)", name: "icon", widget: string }
+              - { label: "Accent Color", name: "color", widget: color }
+              - label: "Skills in this category"
+                name: "items"
+                widget: list
+                summary: "{{name}} — {{proficiency}}%"
+                fields:
+                  - { label: "Skill Name", name: "name", widget: string }
+                  - { label: "Proficiency %", name: "proficiency", widget: number, value_type: int, min: 0, max: 100 }
+
+  # ── Experience ────────────────────────────────────────────────────────
+  - name: "experience"
+    label: "Experience"
+    files:
+      - file: "data/experience.json"
+        label: "Work Experience"
+        name: "experience"
+        fields:
+          - { name: "_instructions", widget: hidden, default: "Total experience years are auto-calculated from startDate. Set endDate to null for current role. Add as many jobs as needed." }
+          - label: "Companies"
+            name: "jobs"
+            widget: list
+            summary: "{{role}} @ {{company}}"
+            fields:
+              - { label: "Company", name: "company", widget: string }
+              - { label: "Role / Job Title", name: "role", widget: string }
+              - { label: "Employment Type", name: "type", widget: select, options: ["Full-time", "Part-time", "Internship", "Contract", "Freelance"], default: "Full-time" }
+              - { label: "Location", name: "location", widget: string }
+              - { label: "Currently Working Here", name: "current", widget: boolean, default: false }
+              - { label: "Start Date", name: "startDate", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "End Date (leave blank if current)", name: "endDate", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false }
+              - { label: "Company Logo", name: "logo", widget: image, media_folder: "assets/images/companies", public_folder: "assets/images/companies", required: false, hint: "Leave empty to show the fallback emoji instead" }
+              - { name: "_logoNote", widget: hidden, default: "" }
+              - { label: "Logo Fallback Emoji", name: "logoFallback", widget: string, default: "🏢" }
+              - { label: "Accent Color", name: "accentColor", widget: color, required: false }
+              - { label: "Description", name: "description", widget: text }
+              - { label: "Responsibilities", name: "responsibilities", widget: list }
+              - { label: "Key Achievements", name: "achievements", widget: list }
+              - { label: "Technologies Used", name: "technologies", widget: list }
+
+  # ── Projects ──────────────────────────────────────────────────────────
+  - name: "projects"
+    label: "Projects"
+    files:
+      - file: "data/projects.json"
+        label: "Projects"
+        name: "projects"
+        fields:
+          - { name: "_instructions", widget: hidden, default: "Add unlimited projects. featured:true makes the card span full width. All image fields are optional — an emoji is shown as fallback." }
+          - label: "Projects"
+            name: "projects"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { label: "Project Title", name: "title", widget: string }
+              - { label: "Description", name: "summary", widget: text, hint: "Short summary shown on the project card" }
+              - { label: "Business Problem", name: "problem", widget: text }
+              - { label: "Solution", name: "solution", widget: text }
+              - { label: "Results & Impact", name: "results", widget: text, required: false }
+              - label: "Key Result Stats"
+                name: "kpis"
+                widget: list
+                required: false
+                summary: "{{value}} — {{label}}"
+                fields:
+                  - { label: "Value", name: "value", widget: string }
+                  - { label: "Label", name: "label", widget: string }
+              - { label: "Technologies", name: "tools", widget: list, hint: "Shown as tags inside the project's case-study popup" }
+              - { label: "Category / Skills Used", name: "category", widget: list, hint: "Shown as tags on the card and used for the filter buttons — e.g. Power BI, DAX, Excel" }
+              - { label: "GitHub Link", name: "githubUrl", widget: string, required: false }
+              - { label: "Live Demo Link", name: "liveUrl", widget: string, required: false }
+              - { label: "Featured Project", name: "featured", widget: boolean, default: false }
+              - { label: "Project Screenshot", name: "thumbnail", widget: image, media_folder: "assets/images/projects", public_folder: "assets/images/projects", required: false, hint: "If left empty, the icon + color below is shown instead" }
+              - { label: "Icon Emoji (used if no screenshot)", name: "emoji", widget: string, required: false, default: "📊" }
+              - { label: "Accent Gradient (advanced, CSS value)", name: "gradient", widget: string, required: false }
+              - { label: "Display Order", name: "order", widget: number, value_type: int, default: 1 }
+
+  # ── Certifications ────────────────────────────────────────────────────
+  - name: "certifications"
+    label: "Certifications"
+    files:
+      - file: "data/certifications.json"
+        label: "Certifications"
+        name: "certifications"
+        fields:
+          - { name: "_instructions", widget: hidden, default: "Add unlimited certifications. PDFs go in /certificates/, images in /assets/images/certs/" }
+          - label: "Certifications"
+            name: "certifications"
+            widget: list
+            summary: "{{title}}"
+            fields:
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Issuer", name: "issuer", widget: string }
+              - { label: "Certificate Image", name: "image", widget: image, media_folder: "assets/images/certs", public_folder: "assets/images/certs", required: false }
+              - { label: "Certificate PDF", name: "pdfFile", widget: file, media_folder: "certificates", public_folder: "certificates", required: false }
+              - { label: "Icon Emoji (used if no image)", name: "emoji", widget: string, required: false, default: "🏆" }
+              - { label: "Description", name: "description", widget: text }
+              - { label: "Issued Date", name: "issuedDate", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Expiry Date (leave blank if it never expires)", name: "expiryDate", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false }
+              - { label: "Verification URL", name: "verifyUrl", widget: string, required: false }
+              - { label: "Credential ID", name: "credentialId", widget: string, required: false }
+              - { label: "Tags", name: "tags", widget: list }
+              - { label: "Display Order", name: "order", widget: number, value_type: int, default: 1 }
+
+  # ── Resume ────────────────────────────────────────────────────────────
+  - name: "resume"
+    label: "Resume"
+    files:
+      - file: "data/resume.json"
+        label: "Resume"
+        name: "resume"
+        fields:
+          - { name: "_instructions", widget: hidden, default: "Place PDF files in the /resume/ folder. Add as many resume variants as needed." }
+          - label: "Resume Files"
+            name: "resumes"
+            widget: list
+            summary: "{{label}}"
+            fields:
+              - { label: "Icon (emoji)", name: "icon", widget: string, default: "📊" }
+              - { label: "Label", name: "label", widget: string, hint: "e.g. Data Analyst" }
+              - { label: "Description", name: "description", widget: text }
+              - { label: "Resume PDF", name: "file", widget: file, media_folder: "resume", public_folder: "resume" }
+              - { label: "Use as the main Download Resume button", name: "primary", widget: boolean, default: true }
+              - { label: "Display Order", name: "order", widget: number, value_type: int, default: 1 }
+
+  # ── Social Links ──────────────────────────────────────────────────────
+  - name: "social"
+    label: "Social Links"
+    files:
+      - file: "data/social.json"
+        label: "Social Links"
+        name: "social"
+        fields:
+          - { name: "_instructions", widget: hidden, default: "Update URLs with your real profile links. Set display:false to hide any platform." }
+          - label: "Links"
+            name: "social"
+            widget: list
+            summary: "{{platform}}"
+            fields:
+              - { label: "Platform Name", name: "platform", widget: string }
+              - { label: "Label", name: "label", widget: string }
+              - { label: "Symbol shown as the icon", name: "symbol", widget: string, hint: "e.g. in, gh, tw" }
+              - { label: "URL", name: "url", widget: string }
+              - { label: "Show on site", name: "display", widget: boolean, default: true }
