@@ -505,51 +505,6 @@ function renderAchievements(d) {
     </div>`).join(''));
 }
 
-/* ─── 17. Blog ─── */
-let _posts = [];
-function renderBlog(d) {
-  if (!d?.posts) return;
-  _posts = [...d.posts].sort((a,b)=>(a.order||99)-(b.order||99));
-  const cats = [...new Set(_posts.map(p=>p.category))];
-  setHTML('#blog-cat-filters',
-    `<button class="blog-cat-btn active" data-bc="all">All</button>` +
-    cats.map(c=>`<button class="blog-cat-btn" data-bc="${esc(c)}">${esc(c)}</button>`).join('')
-  );
-  $('#blog-cat-filters')?.addEventListener('click', e => {
-    if (!e.target.matches('.blog-cat-btn')) return;
-    $$('.blog-cat-btn').forEach(b=>b.classList.remove('active'));
-    e.target.classList.add('active'); filterBlog();
-  });
-  $('#blog-search-input')?.addEventListener('input', filterBlog);
-  renderPostCards(_posts);
-}
-function filterBlog() {
-  const bc = $('.blog-cat-btn.active')?.dataset.bc || 'all';
-  const q = ($('#blog-search-input')?.value||'').toLowerCase().trim();
-  renderPostCards(_posts.filter(p=>
-    (bc==='all'||p.category===bc) && (!q||p.title.toLowerCase().includes(q)||p.summary.toLowerCase().includes(q))
-  ));
-}
-function renderPostCards(posts) {
-  const grid = $('#blog-grid');
-  if (!grid) return;
-  grid.innerHTML = posts.length ? posts.map(p => `
-    <article class="blog-card reveal">
-      <div class="blog-thumb"><div class="blog-thumb-glow"></div>${p.emoji}</div>
-      <div class="blog-body">
-        <span class="blog-cat-label">${esc(p.category)}</span>
-        <h3 class="blog-title">${esc(p.title)}</h3>
-        <p class="blog-summary">${esc(p.summary)}</p>
-        <div class="blog-footer">
-          <span class="blog-meta-text">${fmtDate(p.date,{month:'short',day:'numeric',year:'numeric'})} · ${esc(p.readTime)}</span>
-          ${p.externalUrl ? `<a href="${esc(p.externalUrl)}" class="blog-read-link" target="_blank" rel="noopener noreferrer">Read →</a>` : '<span class="blog-read-link" style="color:var(--text-3)">Coming soon</span>'}
-        </div>
-      </div>
-    </article>`).join('')
-    : `<div class="no-results" style="grid-column:1/-1"><div class="no-results-icon">📭</div><p>No posts found.</p></div>`;
-  setTimeout(() => $$('#blog-grid .reveal').forEach(el => { if (isVisible(el)) el.classList.add('vis'); }), 60);
-}
-
 /* ─── 18. Testimonials Carousel ─── */
 function renderTestimonials(d, autoMs = 5500) {
   if (!d?.testimonials) return;
@@ -696,7 +651,6 @@ async function init() {
     renderEducation(education);
     renderResume(resume);
     renderAchievements(achievements);
-    renderBlog(blog);
     renderTestimonials(testimonials, settings?.testimonials?.autoplayMs ?? 5500);
     renderSocial(social);
     renderContact(p);
