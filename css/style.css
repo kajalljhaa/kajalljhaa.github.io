@@ -192,6 +192,8 @@ section{padding:120px 0}
 .about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:start}
 .about-text{font-size:1.05rem;color:var(--text-2);line-height:1.9;margin-bottom:32px}
 .about-text strong{color:var(--text);font-weight:600}
+.mission-vision-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.mission-vision-row .about-callout{margin-bottom:0}
 .about-callout{position:relative;padding:22px 26px;border-radius:var(--r-lg);background:var(--surface);border:1px solid var(--border);margin-bottom:20px;overflow:hidden}
 .about-callout::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(var(--accent),transparent)}
 .callout-label{font-size:.7rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
@@ -547,6 +549,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:60px 0 28
   .edu-proj-grid{grid-template-columns:1fr}
   .cf-row{grid-template-columns:1fr}
   .strengths-list{grid-template-columns:1fr 1fr}
+  .mission-vision-row{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr;gap:24px}
   .footer-base{flex-direction:column;text-align:center}
   .hero-btns{flex-direction:column}
