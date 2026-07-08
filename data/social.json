@@ -1,7 +1,7 @@
 {
   "_instructions": "Update URLs with your real profile links. Set display:false to hide any platform.",
   "social": [
-    { "platform": "LinkedIn",      "label": "LinkedIn",  "symbol": "in", "url": "https://linkedin.com/in/kajaljha",           "display": true  },
+    { "platform": "LinkedIn",      "label": "LinkedIn",  "symbol": "in", "url": "https://linkedin.com/in/kajal-jhaa",         "display": true  },
     { "platform": "GitHub",        "label": "GitHub",    "symbol": "gh", "url": "https://github.com/kajalljhaa",              "display": true  },
     { "platform": "Twitter/X",     "label": "Twitter",   "symbol": "𝕏",  "url": "https://twitter.com/",                       "display": false },
     { "platform": "Medium",        "label": "Medium",    "symbol": "M",  "url": "https://medium.com/",                        "display": false },
